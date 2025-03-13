@@ -1,14 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-import '../styles/ClienteList.css';  // Importa el archivo de estilos
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import "../styles/ClienteList.css"; // Importa el archivo de estilos
+
+const borrarCliente = (id) => {
+  axios.delete(`http://localhost:3000/clientes/${id}`);
+};
 
 const ClienteList = () => {
   const [clientes, setClientes] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/clientes')
+    axios
+      .get("http://localhost:3000/clientes")
       .then((response) => setClientes(response.data))
-      .catch((error) => console.error('Error al obtener clientes', error));
+      .catch((error) => console.error("Error al obtener clientes", error));
   }, []);
 
   return (
@@ -20,6 +25,7 @@ const ClienteList = () => {
             <th>ID</th>
             <th>Nombre</th>
             <th>Correo</th>
+            <th>Acciones</th>
           </tr>
         </thead>
         <tbody>
@@ -28,6 +34,11 @@ const ClienteList = () => {
               <td>{cliente.id}</td>
               <td>{cliente.nombre}</td>
               <td>{cliente.correo}</td>
+              <td>
+                <button onClick={() => borrarCliente(cliente.id)}>
+                  Eliminar
+                </button>
+              </td>
             </tr>
           ))}
         </tbody>
