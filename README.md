@@ -1,4 +1,4 @@
-INTEGRANTES:
-gabriel  cristian martinez torrez
-Harold Joseph Sanchez Nogales
-David Hugo Rivas Gutierrez
+#INTEGRANTES:
+gabriel  cristian martinez torrez.
+Harold Joseph Sanchez Nogales.
+David Hugo Rivas Gutierrez.
