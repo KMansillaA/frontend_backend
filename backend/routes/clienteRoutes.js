@@ -1,6 +1,12 @@
 const express = require("express"); // Importa Express para manejar rutas
-const { Cliente } = require("../models"); // Importa el modelo Cliente desde la carpeta models
+//const { Cliente } = require("../models"); // Importa el modelo Cliente desde la carpeta models
 const router = express.Router(); // Crea un router de Express
+//codigo adicionado --
+const { obtenerClientes, crearCliente } = require('../controllers/cliente.controller');
+router.get('/clientes', obtenerClientes);
+router.post('/clientes', crearCliente);
+
+//fin de codigo adicionado
 
 // Crear un nuevo cliente
 router.post("/", async (req, res) => {

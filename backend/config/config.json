@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "postgres",
-    "password": "123456789",
-    "database": "ejCodeFirst",
+    "password": "12345678",
+    "database": "tienda",
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
