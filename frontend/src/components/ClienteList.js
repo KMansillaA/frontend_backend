@@ -1,10 +1,18 @@
-import React, { useEffect, useState } from "react";
 import axios from "axios";
+import React, { useEffect, useState } from "react";
 import "../styles/ClienteList.css"; // Importa el archivo de estilos
 
-const borrarCliente = (id) => {
-  axios.delete(`http://localhost:3000/clientes/${id}`);
-};
+// 
+// Integrantes
+// Rios David
+// Torrez Marcelo
+// Rivera Enrique
+// 
+
+
+// const borrarCliente = (id) => {
+//   axios.delete(`http://localhost:3000/clientes/${id}`);
+// };
 
 const ClienteList = () => {
   const [clientes, setClientes] = useState([]);
@@ -48,3 +56,5 @@ const ClienteList = () => {
 };
 
 export default ClienteList;
+
+                                                                                                                                                                                                                                                                                                                                   // Integrantes: Torrez Marcelo, Rivera Enrique, Rios David
