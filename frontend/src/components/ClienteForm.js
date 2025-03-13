@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import '../styles/Cliente.css'; 
 
 const ClienteForm = ({ onClienteAdded }) => {
   const [nombre, setNombre] = useState('');

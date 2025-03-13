@@ -1,0 +1,51 @@
+/* Navbar.css o App.css */
+
+/* Estilos generales para el navbar */
+nav {
+    background-color: #333; /* Fondo oscuro */
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    margin-left: 2rem;  /* Espacio entre los elementos */
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: #4CAF50; /* Color verde en hover */
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: #45a049; /* Color verde más oscuro en clic */
+  }
+  
+  /* Estilos para los dispositivos móviles */
+  @media (max-width: 768px) {
+    ul {
+      flex-direction: column; /* Apilar los elementos en móviles */
+      text-align: center;
+    }
+  
+    li {
+      margin: 1rem 0; /* Espaciado vertical */
+    }
+  }
+  
