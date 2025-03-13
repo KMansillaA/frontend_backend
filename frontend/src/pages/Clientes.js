@@ -7,8 +7,9 @@ const Clientes = () => {
   const [clientes, setClientes] = useState([]);
 
   const handleClienteAdded = (nuevoCliente) => {
-    setClientes([...clientes, nuevoCliente]);
+    setClientes([...clientes, nuevoCliente]);    
   };
+  
 
   return (
     <div className="clientes-container">
@@ -17,7 +18,7 @@ const Clientes = () => {
         <ClienteForm onClienteAdded={handleClienteAdded} />
       </div>
       <div className="clientes-list">
-        <ClienteList />
+        <ClienteList/>
       </div>
     </div>
   );

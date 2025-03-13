@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-const ClienteForm = ({ onClienteAdded }) => {
+const ClienteForm = ({ onClienteAdded }) => { 
   const [nombre, setNombre] = useState('');
   const [correo, setCorreo] = useState('');
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/clientes', { nombre, correo });
+      const response = await axios.post('http://192.168.1.100:3000/clientes', { nombre, correo });      
       onClienteAdded(response.data);
       setNombre('');
       setCorreo('');
