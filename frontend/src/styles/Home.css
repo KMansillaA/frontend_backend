@@ -1,47 +1,74 @@
-/* home.css */
+/* Home.css */
 
-.container {
-    min-height: 100vh;
+/* Fondo blanco con un toque verde en el contenedor principal */
+.home-container {
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to right, #3b82f6, #6366f1);
-}
-
-.card {
-    text-align: center;
-    color: white;
-    padding: 30px 40px;
-    border-radius: 8px;
-    background-color: rgba(10, 123, 67, 0.5);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-.title {
-    font-size: 3rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
-
-.subtitle {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-}
-
-.button {
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    flex-direction: column;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;  /* Fondo suave para la página */
+  }
+  
+  /* Estilo para la "card" que contiene los elementos */
+  .card {
     background-color: white;
-    color: #080824;
-    padding: 12px 24px;
-    border-radius: 50px;
-    font-size: 1.125rem;
-    font-weight: 600;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 500px;  /* Ancho máximo para la tarjeta */
+    text-align: center;  /* Centra los elementos dentro de la card */
+  }
+  
+  /* Estilo para el h1 dentro de la card */
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #43a047; /* Verde oscuro */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+  
+  /* Estilo para el párrafo dentro de la card */
+  p {
+    font-size: 1.2rem;
+    color: #555555; /* Gris suave para el texto */
+    margin-bottom: 30px;
+  }
+  
+  /* Estilo para el botón */
+  button {
+    background-color: #4CAF50;  /* Verde principal */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 128, 0, 0.1);  /* Sombra suave */
+  }
+  
+  button:hover {
+    background-color: #388e3c;  /* Verde más oscuro */
+  }
+  
+  button:active {
+    background-color: #2c6b2f;  /* Verde aún más oscuro */
+  }
+  
+  /* Estilo para los enlaces si no usas el botón */
+  a {
+    color: #4CAF50;
     text-decoration: none;
-    transition: 0.3s;
-}
-
-.button:hover {
-    background-color: #e0e7ff;
-    transform: scale(1.05);
-}
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #388e3c; /* Cambia el color al pasar el mouse */
+  }
+  
