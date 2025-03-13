@@ -10,9 +10,9 @@ import "../styles/ClienteList.css"; // Importa el archivo de estilos
 // 
 
 
-// const borrarCliente = (id) => {
-//   axios.delete(`http://localhost:3000/clientes/${id}`);
-// };
+const borrarCliente = (id) => {
+  axios.delete(`http://localhost:3000/clientes/${id}`);
+};
 
 const ClienteList = () => {
   const [clientes, setClientes] = useState([]);
