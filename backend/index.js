@@ -9,6 +9,11 @@ const app = express();
 const sequelize = new Sequelize(dbConfig);
 
 // Usa CORS para permitir solicitudes de otros orígenes
+const corsOptions = {
+  origin: process.env.FRONTEND_URL || "*", 
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+};
 app.use(cors()); // Habilita CORS
 
 app.use(express.json());
