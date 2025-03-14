@@ -7,7 +7,16 @@
       "dialect": "postgres"
     },
     "production": {
-      "use_env_variable": "DATABASE_URL",
-      "dialect": "postgres"
+      "username": "postgress",
+      "password": "FUDSUkfXwGgJSeI3mcUL5qVtuQRN9zKh",
+      "database": "ejcodefirst",
+      "host": "dpg-cva3idhc1ekc738prnmg-a",
+      "dialect": "postgres",
+      "dialectOptions": {
+        "ssl": {
+          "require": true,
+          "rejectUnauthorized": false
+        }
+      }
     }
   }
