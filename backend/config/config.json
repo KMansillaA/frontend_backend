@@ -1,9 +1,13 @@
 {
-  "development": {
-    "username": "postgres",
-    "password": "123456789",
-    "database": "ejcodefirst",
-    "host": "127.0.0.1",
-    "dialect": "postgres"
+    "development": {
+      "username": "postgres",
+      "password": 12345678,
+      "database": "ejcodefirst",
+      "host": "127.0.0.1",
+      "dialect": "postgres"
+    },
+    "production": {
+      "use_env_variable": "DATABASE_URL",
+      "dialect": "postgres"
+    }
   }
-}
