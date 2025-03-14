@@ -8,7 +8,7 @@ const ClienteForm = ({ onClienteAdded }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/clientes', { nombre, correo });
+      const response = await axios.post('https://demo-backend-pwj9.onrender.com/clientes', { nombre, correo });
       onClienteAdded(response.data);
       setNombre('');
       setCorreo('');

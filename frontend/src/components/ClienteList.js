@@ -6,7 +6,7 @@ const ClienteList = () => {
   const [clientes, setClientes] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/clientes')
+    axios.get('https://demo-backend-pwj9.onrender.com/clientes')
       .then((response) => setClientes(response.data))
       .catch((error) => console.error('Error al obtener clientes', error));
   }, []);
