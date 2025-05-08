@@ -1,9 +1,9 @@
 {
     "development": {
       "username": "postgress",
-      "password": "FUDSUkfXwGgJSeI3mcUL5qVtuQRN9zKh",
-      "database": "ejcodefirst",
-      "host": "dpg-cva3idhc1ekc738prnmg-a",
+      "password": "A77gtkpja0Qrjhpowy0aqBuBFwyNlsDb",
+      "database": "ejcodefirst_rqbt",
+      "host": "dpg-d0ecte3uibrs73bhe8ng-a",
       "dialect": "postgres",
       "dialectOptions": {
         "ssl": {
@@ -14,9 +14,9 @@
     },
     "production": {
       "username": "postgress",
-      "password": "FUDSUkfXwGgJSeI3mcUL5qVtuQRN9zKh",
-      "database": "ejcodefirst",
-      "host": "dpg-cva3idhc1ekc738prnmg-a",
+      "password": "A77gtkpja0Qrjhpowy0aqBuBFwyNlsDb",
+      "database": "ejcodefirst_rqbt",
+      "host": "dpg-d0ecte3uibrs73bhe8ng-a",
       "dialect": "postgres",
       "dialectOptions": {
         "ssl": {
